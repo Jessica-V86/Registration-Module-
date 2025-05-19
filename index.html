@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <main>
+            <section id="registration" class="active">
+                <div class="container">
+                    <h1>Student Registration</h1>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="regEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="regPassword" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="submit-button">Register</button>
+                        <p class="link-below-button">Already have an account? <a href="#login">Login</a></p>
+                    </form>
+                    <div id="regMessage" class="message"></div>
+                </div>
+            </section>
+
+            <section id="login">
+                <div class="container">
+                    <h1>Student Login</h1>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                        </div>
+                        <button type="submit" class="submit-button">Login</button>
+                        <p class="link-below-button">Don't have an account? <a href="#registration">Register</a></p>
+                    </form>
+                    <div id="loginMessage" class="message"></div>
+                </div>
+            </section>
+
+            <section id="home">
+                <aside>
+                    <h2>Transactions</h2>
+                    <ul>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Student Profile</a></li>
+                        <li><a href="#">Pre-enrollment</a></li>
+                        <li><a href="#">Enrollment</a></li>
+                        <li><a href="#">Add/Cross Enroll</a></li>
+                        <li><a href="#">Assessment</a></li>
+                        <li><a href="#">Account Due</a></li>
+                        <li><a href="#">Learning Modules</a></li>
+                        <li><a href="#">My Online Tasks</a></li>
+                        <li><a href="#">My Test Scores</a></li>
+                        <li><a href="#">Teacher Evaluation</a></li>
+                        <li><a href="#">Schedule of Class</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </aside>
+                <main>
+                    <h2>Welcome, Student!</h2>
+                    <section id="enrollment-options">
+                        <h3>Enrollment Options</h3>
+                        <ul>
+                            <li><a href="#">View Available Courses</a></li>
+                            <li><a href="#">Enroll in Courses</a></li>
+                            <li><a href="#">View Enrollment Status</a></li>
+                        </ul>
+                    </section>
+
+                    <section id="important-announcements">
+                        <h3>Important Announcements</h3>
+                        <ul>
+                            <li>Enrollment for the First Semester begins on [Date].</li>
+                            <li>Deadline for adding/dropping subjects is [Date].</li>
+                            <li>Check the academic calendar for more important dates.</li>
+                        </ul>
+                    </section>
+                    <div id="logout-button">
+                        <button id="logout">Logout</button>
+                    </div>
+                </main>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
